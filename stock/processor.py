@@ -4,11 +4,10 @@ Stock Processing Logic
 Core functions for evaluating and processing stock data.
 """
 
-from typing import Tuple, List
 from .models import ProductList
 from .utils import safe_float, normalize_quantity
 
-def process_stock(product_list: ProductList) -> Tuple[float, List[str]]:
+def process_stock(product_list: ProductList) -> tuple[float, list[str]]:
     """
     Process stock data to calculate total stock value and out-of-stock items.
 
